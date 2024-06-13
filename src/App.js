@@ -39,7 +39,7 @@ const App = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/getAllData');
+      const response = await axios.get('https://backend-repository-2xfr.onrender.com/getAllData');
       const allTransactions = response.data.data;
       setAllTransactions(allTransactions);
       filterAndPaginateData(allTransactions);
@@ -80,7 +80,7 @@ const App = () => {
   const fetchStatistics = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/getStatistics?month=${month}&year=${year}`
+        `https://backend-repository-2xfr.onrender.com/getStatistics?month=${month}&year=${year}`
       );
       setStatistics(response.data);
     } catch (error) {
@@ -91,7 +91,7 @@ const App = () => {
   const fetchBarChartData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/getBarChartData?month=${month}`
+        `https://backend-repository-2xfr.onrender.com/getBarChartData?month=${month}`
       );
       setTransactionChart(response.data.data);
     } catch (error) {
