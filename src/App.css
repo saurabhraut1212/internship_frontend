@@ -1,0 +1,80 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+}
+
+.filters {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.year-input {
+	width: 80px;
+	padding: 8px;
+	font-size: 14px;
+}
+
+.statistics-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+.pagination {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pagination button {
+	padding: 8px 16px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.pagination button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.statistics {
+	width: 48%;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+
+.transactions-chart {
+	width: 48%;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
